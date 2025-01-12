@@ -57,7 +57,7 @@
 		"stylelint-use-logical-spec": "^5.0.1",
 		"typescript": "^5.7.3",
 		"vite": "^6.0.7",
-		"wait-on": "^8.0.1"
+		"wait-on": "^8.0.2"
 	},
 	"optionalDependencies": {
 		"lint-staged": "^15.3.0"
