@@ -88,6 +88,6 @@
 		"@fontsource/caveat": "^5.1.1",
 		"@fontsource/gfs-didot": "^5.2.5",
 		"@fontsource/titillium-web": "^5.2.5",
-		"astro": "^5.5.4"
+		"astro": "^5.5.5"
 	}
 }
