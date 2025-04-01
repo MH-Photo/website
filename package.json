@@ -42,7 +42,7 @@
 		"eslint-plugin-compat": "^4.2.0",
 		"hint": "^7.1.13",
 		"husky": "^9.1.7",
-		"image-size": "^1.2.0",
+		"image-size": "^2.0.1",
 		"postcss": "^8.5.3",
 		"postcss-loader": "^8.1.1",
 		"postcss-nesting": "^13.0.0",
