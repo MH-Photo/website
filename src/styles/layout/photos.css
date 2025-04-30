@@ -35,6 +35,7 @@
 			transform-origin: bottom;
 			color: var(--color-onpicture);
 			font-size: var(--font-size-header-l);
+			font-weight: var(--font-weight-medium);
 			text-transform: uppercase;
 
 			@media (prefers-reduced-motion: no-preference) {
