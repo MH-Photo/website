@@ -17,17 +17,17 @@
 	& > .image {
 		display: grid;
 		grid-area: picture;
-		grid-template-columns: min-content;
+		grid-template: 'title' 'image' 'subtitle' / min-content;
 		place-self: center center;
-		transform: rotate(-5deg);
-		border: var(--color-picture-border) 0.75rem solid;
-		background-color: var(--color-picture-border);
 		filter: drop-shadow(-0.25rem 0.5rem 0.75rem var(--color-shadow));
 
 		/* & > :is(picture, blockquote) {
 			grid-row: 1;
 			grid-column: 1;
 		} */
+		& > picture {
+			grid-area: image;
+		}
 		& img {
 			max-block-size: 35svb;
 			inline-size: auto;
@@ -35,22 +35,42 @@
 			object-fit: cover;
 			object-position: top;
 		}
-		& > blockquote {
-			z-index: 1;
+		& > figcaption {
+			display: grid;
+			grid-column: 1;
+			grid-row: 1 / span 3;
+			grid-template-columns: auto;
+			grid-template-rows: subgrid;
 			align-self: end;
 			margin-block-start: 0.5rem;
 			margin-inline: 0.5ch;
-			color: var(--color-text-on-picture-border);
-			font-size: var(--font-size-ml);
+
+			/* color: var(--color-text-on-picture-border); */
+			font-size: var(--font-size-xl);
+			font-weight: var(--font-weight-light);
 			text-wrap: balance;
+
+			& > p {
+				margin-block: 0;
+				text-align: center;
+			}
+			& > p:first-child {
+				grid-area: title;
+			}
+			& > p:last-child {
+				grid-area: subtitle;
+			}
 		}
 	}
+	/* stylelint-disable-next-line no-descending-specificity */
 	& > p {
 		margin-block: 0;
 	}
+	/* stylelint-disable-next-line no-descending-specificity */
 	& > p:not(.subtitle) {
 		text-align: justify;
 	}
+	/* stylelint-disable-next-line no-descending-specificity */
 	& .subtitle {
 		grid-area: subtitle;
 		align-self: end;
