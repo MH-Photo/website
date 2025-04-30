@@ -19,7 +19,6 @@
 		grid-area: picture;
 		grid-template: 'title' 'image' 'subtitle' / min-content;
 		place-self: center center;
-		filter: drop-shadow(-0.25rem 0.5rem 0.75rem var(--color-shadow));
 
 		/* & > :is(picture, blockquote) {
 			grid-row: 1;
@@ -46,7 +45,8 @@
 			margin-inline: 0.5ch;
 
 			/* color: var(--color-text-on-picture-border); */
-			font-size: var(--font-size-xl);
+			font-family: var(--font-family-header);
+			font-size: var(--font-size-l);
 			font-weight: var(--font-weight-light);
 			text-wrap: balance;
 
