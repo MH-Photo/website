@@ -31,14 +31,13 @@
 			max-block-size: 35svb;
 			inline-size: auto;
 			min-inline-size: 50vmin;
-			object-fit: cover;
-			object-position: top;
+			object-fit: contain;
 		}
 		& > figcaption {
 			display: grid;
 			grid-column: 1;
 			grid-row: 1 / span 3;
-			grid-template-columns: auto;
+			grid-template-columns: subgrid;
 			grid-template-rows: subgrid;
 			align-self: end;
 			margin-block-start: 0.5rem;
