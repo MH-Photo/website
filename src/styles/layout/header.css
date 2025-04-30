@@ -19,7 +19,8 @@
 		justify-content: center;
 		margin: 0;
 		padding-block: var(--spacing-xs) var(--spacing-s);
-		background: var(--color-bg-onpicture);
+
+		/* background: var(--color-bg-onpicture); */
 		color: var(--color-onpicture);
 
 		& > svg {
@@ -33,7 +34,7 @@
 		color: var(--color-text);
 		font-family: var(--font-family-header);
 		font-size: clamp(var(--font-size-header-m), 5vw, var(--font-size-header-xl));
-		font-weight: var(--font-weight-normal);
+		font-weight: var(--font-weight-light);
 		text-align: center;
 		text-wrap: balance;
 	}
