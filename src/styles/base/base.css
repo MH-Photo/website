@@ -23,6 +23,7 @@ body {
 blockquote {
 	margin: unset;
 	font-family: var(--font-family-header);
+	font-weight: var(--font-weight-light);
 }
 
 cite {

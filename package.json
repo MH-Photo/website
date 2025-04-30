@@ -85,6 +85,7 @@
 	},
 	"dependencies": {
 		"@astrojs/sitemap": "^3.3.1",
+		"@fontsource-variable/noto-serif-display": "^5.2.6",
 		"@fontsource/caveat": "^5.2.5",
 		"@fontsource/gfs-didot": "^5.2.5",
 		"@fontsource/titillium-web": "^5.2.5",

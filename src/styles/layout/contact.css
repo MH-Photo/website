@@ -34,6 +34,6 @@
 	}
 	& .fn {
 		font-family: var(--font-family-header);
-		font-weight: var(--font-weight-normal);
+		font-weight: var(--font-weight-light);
 	}
 }
