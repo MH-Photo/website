@@ -24,7 +24,7 @@
 		}
 		& img {
 			object-fit: cover;
-			object-position: bottom;
+			object-position: center 25%;
 			transition: all 0.5s ease;
 			filter: var(--img-hover);
 

@@ -88,7 +88,7 @@
 			block-size: 100%;
 			inline-size: 100%;
 			object-fit: cover;
-			object-position: bottom;
+			object-position: center 40%;
 		}
 	}
 }
