@@ -1,5 +1,10 @@
-html {
-	@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
+	@view-transition {
+		/* biome-ignore lint/correctness/noUnknownProperty: Progressive enhancement for browsers with support */
+		navigation: auto;
+	}
+
+	html {
 		scroll-behavior: smooth;
 	}
 }
@@ -23,6 +28,7 @@ body {
 blockquote {
 	margin: unset;
 	font-family: var(--font-family-header);
+	font-weight: var(--font-weight-light);
 }
 
 cite {

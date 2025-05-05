@@ -7,7 +7,7 @@ const t = useTranslations(lang);
 
 <section id="about">
 	<h2>{t('about.title')}</h2>
-	<div class="image">
+	<figure class="image">
 	<picture>
 			<source srcset="/assets/img/about-400.avif 400w, /assets/img/about-1920.avif" type="image/avif" />
 			<source srcset="/assets/img/about-400.webp 400w, /assets/img/about-1920.webp" type="image/webp" />
@@ -20,8 +20,8 @@ const t = useTranslations(lang);
 				alt="Manual Hamel, photographer"
 			/>
 		</picture>
-		<blockquote>I really believe there are things nobody would see if I didn't photograph them<cite>Diane Arbus</cite></blockquote>
-		</div>
+		<figcaption><p>{t('about.figcaption')}</p><p>Love Storyteller</p></figcaption>
+		</figure>
 		<p>{t('about.p1')}</p>
 		<p>{t('about.p2')}</p>
 		<p>{t('about.p3')}</p>
