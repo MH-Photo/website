@@ -1,3 +1,10 @@
+# [2.8.0](https://github.com/MH-Photo/website/compare/v2.7.5...v2.8.0) (2025-05-05)
+
+
+### Features
+
+* update content ([#1256](https://github.com/MH-Photo/website/issues/1256)) ([9840150](https://github.com/MH-Photo/website/commit/98401507e7c137a3b1751c31d2f38da8d71362ac))
+
 ## [2.7.5](https://github.com/MH-Photo/website/compare/v2.7.4...v2.7.5) (2024-12-18)
 
 
