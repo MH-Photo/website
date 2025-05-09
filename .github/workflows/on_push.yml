@@ -28,7 +28,6 @@ jobs:
 
   test-code:
     name: '▶️ actions'
-    needs: [lint-code]
     uses: ./.github/workflows/test-code.yml
 
   # visual-test:
@@ -47,7 +46,7 @@ jobs:
       pull-requests: write
 
     name: '▶️ actions'
-    needs: [test-code, codeql, sonarqube]
+    needs: [lint-code, test-code]
     uses: ./.github/workflows/release.yml
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN  }}

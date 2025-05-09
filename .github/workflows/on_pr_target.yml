@@ -26,6 +26,7 @@ jobs:
 
   lint-code:
     name: '▶️ actions'
+    needs: [lint-pr]
     uses: ./.github/workflows/lint-code.yml
 
   # Test is currently covered by test-code
@@ -36,7 +37,7 @@ jobs:
 
   test-code:
     name: '▶️ actions'
-    needs: [lint-pr, lint-code]
+    needs: [lint-pr]
     uses: ./.github/workflows/test-code.yml
 
   # visual-test:
@@ -64,7 +65,7 @@ jobs:
       deployments: write
 
     name: '▶️ actions'
-    needs: [test-code, codeql, sonarqube]
+    needs: [lint-code, test-code]
 
     # Publish only if not PR is not in Draft state and it was not opened by dependabot
     if: github.event.pull_request.draft == false && github.actor != 'dependabot[bot]'
