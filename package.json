@@ -41,7 +41,7 @@
 		"postcss-loader": "^8.1.1",
 		"postcss-nesting": "^13.0.0",
 		"postcss-preset-env": "^10.1.6",
-		"prettier": "^3.3.3",
+		"prettier": "^3.5.3",
 		"puppeteer": "^24.8.2",
 		"semantic-release": "^24.2.3",
 		"sharp": "^0.34.1",
