@@ -1,27 +1,27 @@
-@import url('@fontsource/titillium-web/latin.css');
-@import url('@fontsource/gfs-didot/index.css');
-@import url('@fontsource/caveat/index.css');
-@import url('@fontsource-variable/noto-serif-display/index.css');
+@import url("@fontsource/titillium-web/latin.css");
+@import url("@fontsource/gfs-didot/index.css");
+@import url("@fontsource/caveat/index.css");
+@import url("@fontsource-variable/noto-serif-display/index.css");
 
 @font-face {
-	font-family: 'Titillium Web-fallback';
+	font-family: "Titillium Web-fallback";
 	size-adjust: 94.88%;
 	ascent-override: 140%;
-	src: local('Arial');
+	src: local("Arial");
 }
 
 @font-face {
-	font-family: 'Noto Serif Display Variable-fallback';
+	font-family: "Noto Serif Display Variable-fallback";
 	size-adjust: 118.94%;
 	ascent-override: 92%;
 	font-weight: 100;
-	src: local('Times New Roman');
+	src: local("Times New Roman");
 }
 
 :root {
-	--font-family: 'Titillium Web', 'Titillium Web-fallback', sans-serif;
-	--font-family-header: 'Noto Serif Display Variable', 'Noto Serif Display Variable-fallback', serif;
-	--font-family-handwriting: 'Caveat', cursive;
+	--font-family: "Titillium Web", "Titillium Web-fallback", sans-serif;
+	--font-family-header: "Noto Serif Display Variable", "Noto Serif Display Variable-fallback", serif;
+	--font-family-handwriting: "Caveat", cursive;
 	--font-family-monospace: monospace;
 
 	/* stylelint-disable-next-line media-feature-name-no-unknown */

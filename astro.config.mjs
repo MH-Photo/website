@@ -13,12 +13,12 @@ export default defineConfig({
 					de: 'de',
 					en: 'en', // The `defaultLocale` value must present in `locales` keys
 					es: 'es',
-					fr: 'fr'
-				}
+					fr: 'fr',
+				},
 			},
 			filter: (url) => {
 				return !url.startsWith('https://mh-photography.com/en/');
-			}
-		})
-	]
+			},
+		}),
+	],
 });

@@ -2,9 +2,9 @@
  * tools/photos.js
  */
 
-import { fileURLToPath } from 'url';
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import sizeOf from 'image-size';
 
 // in production, the script is run from the dist folder
@@ -31,7 +31,7 @@ const getImages = (input) => {
 
 	return fs
 		.readdirSync(albumPath, {
-			withFileTypes: true
+			withFileTypes: true,
 		})
 		.filter((item) => {
 			return item.isFile();
@@ -66,21 +66,23 @@ const getImageData = (album, image) => {
  * @returns {JSON} the JSON representations of the photo albums
  */
 export const photos = (input) => {
-	input = input || 'assets/img/albums';
+	const i = input || 'assets/img/albums';
 
 	const photos = {};
 
 	// Get a list of albums
-	const albums = getAlbums(input);
+	const albums = getAlbums(i);
 
 	// Get a list of file in each album
+	// biome-ignore lint/complexity/noForEach: TODO: refactor this
 	albums.forEach((album) => {
 		photos[album] = {};
-		photos[album].path = `${input}/${album}`;
+		photos[album].path = `${i}/${album}`;
 		photos[album].images = [];
 
 		const images = getImages(photos[album].path);
 
+		// biome-ignore lint/complexity/noForEach: TODO: refactor this
 		images.forEach((image) => {
 			photos[album].images.push(getImageData(photos[album].path, image));
 		});

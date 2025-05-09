@@ -4,10 +4,10 @@ module.exports = {
 		require('autoprefixer'),
 		require('@csstools/postcss-oklab-function'),
 		require('postcss-preset-env')({
-			preserve: true
+			preserve: true,
 		}),
 		require('cssnano')({
-			preset: 'default'
-		})
-	]
+			preset: 'default',
+		}),
+	],
 };

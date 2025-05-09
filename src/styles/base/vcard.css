@@ -1,12 +1,12 @@
 .vcard {
 	display: grid;
 	grid-template:
-		'name name name name'
-		'photo . address-link address'
-		'photo . phone-1-link phone-1'
-		'photo . phone-2-link phone-2'
-		'photo . email-link email'
-		'photo . url-link url' / auto auto auto 1fr;
+		"name name name name"
+		"photo . address-link address"
+		"photo . phone-1-link phone-1"
+		"photo . phone-2-link phone-2"
+		"photo . email-link email"
+		"photo . url-link url" / auto auto auto 1fr;
 	gap: var(--spacing-m) var(--spacing-m);
 
 	& > :is(picture, .photo) {

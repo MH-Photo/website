@@ -13,7 +13,7 @@
 
 	& > a {
 		display: grid;
-		grid-template: 'picture';
+		grid-template: "picture";
 		flex-grow: 1;
 		max-block-size: calc(50vb - var(--spacing-xl));
 		inline-size: 30%;

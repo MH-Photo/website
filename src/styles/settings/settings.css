@@ -17,8 +17,8 @@
 	--mix-blend-mode: darken;
 
 	/**
-   * Light mode
-   */
+	 * Light mode
+	 */
 	@media (prefers-color-scheme: light) {
 		--mix-blend-mode: lighten;
 	}

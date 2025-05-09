@@ -2,8 +2,8 @@
  * tools/sharp.js
  */
 
-const path = require('path');
-const fs = require('fs');
+const path = require('node:path');
+const fs = require('node:fs');
 const sharp = require('sharp');
 
 const sizes = [100, 400, 1920];
@@ -45,7 +45,9 @@ function* getFiles(dir) {
 			fs.mkdirSync(dir, { recursive: true });
 		}
 
+		// biome-ignore lint/complexity/noForEach: TODO: refactor this
 		sizes.forEach((size) => {
+			// biome-ignore lint/complexity/noForEach: TODO: refactor this
 			formats.forEach((format) => {
 				const out = `${output}-${size}.${format}`;
 				sharp(input)
@@ -53,9 +55,9 @@ function* getFiles(dir) {
 						exif: {
 							IFD0: {
 								XPAuthor: 'Manuel Hamel',
-								Copyright: 'Manuel Hamel Photography'
-							}
-						}
+								Copyright: 'Manuel Hamel Photography',
+							},
+						},
 					})
 					.resize({ width: size })
 					.toFormat(format)

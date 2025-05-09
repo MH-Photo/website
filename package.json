@@ -5,12 +5,7 @@
 	"license": "LICENSE",
 	"private": true,
 	"description": "MH Photography",
-	"keywords": [
-		"website",
-		"photography",
-		"personal-website",
-		"portfolio-website"
-	],
+	"keywords": ["website", "photography", "personal-website", "portfolio-website"],
 	"issues": "https://github.com/MH-Photo/website/issues",
 	"repository": {
 		"type": "git",

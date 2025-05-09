@@ -1,8 +1,8 @@
 export const languages = {
-	de: `Deutsch`,
-	en: `English`,
-	es: `Español`,
-	fr: `Français`
+	de: 'Deutsch',
+	en: 'English',
+	es: 'Español',
+	fr: 'Français',
 };
 
 export const defaultLang = 'en';
@@ -14,29 +14,29 @@ export const routes = {
 		albumsfamilies: 'alben/familien',
 		albumspeople: 'alben/menschen',
 		albumstravel: 'alben/reisen',
-		albumsweddings: 'alben/hochzeiten'
+		albumsweddings: 'alben/hochzeiten',
 	},
 	en: {
 		albumsbusiness: 'albums/business',
 		albumsfamilies: 'albums/families',
 		albumspeople: 'albums/people',
 		albumstravel: 'albums/travel',
-		albumsweddings: 'albums/weddings'
+		albumsweddings: 'albums/weddings',
 	},
 	es: {
 		albumsbusiness: 'albumes/negocios',
 		albumsfamilies: 'albumes/familias',
 		albumspeople: 'albumes/personas',
 		albumstravel: 'albumes/viajes',
-		albumsweddings: 'albumes/bodas'
+		albumsweddings: 'albumes/bodas',
 	},
 	fr: {
 		albumsbusiness: 'albums/business',
 		albumsfamilies: 'albums/familles',
 		albumspeople: 'albums/people',
 		albumstravel: 'albums/voyages',
-		albumsweddings: 'albums/mariages'
-	}
+		albumsweddings: 'albums/mariages',
+	},
 } as const;
 
 export const ui = {
@@ -77,7 +77,7 @@ export const ui = {
 		'weddings.p6': `Ich freue mich darauf, dich kennenzulernen und dir dabei zu helfen, diesen Teil deiner Liebesgeschichte zu bewahren. Ich lade dich ein, einen Blick auf mein Portfolio zu werfen und meinen Stil zu entdecken.`,
 		'weddings.albums': `Ich möchte deine Arbeit sehen`,
 		'weddings.packages': `Pakete für deinen großen Tag`,
-		'weddings.contact': `Datum für meine Hochzeit reservieren`
+		'weddings.contact': `Datum für meine Hochzeit reservieren`,
 	},
 	en: {
 		'meta.keywords': `manuel hamel, manuel hamel photography, photography, photographer, professional photographer, photographer in Barcelona, Barcelona, wedding photographer, wedding photographer in Barcelona, professional wedding photographer, wedding photography, wedding photography packages, luxury wedding photography, high end wedding photography, people photographer, people photographer in Barcelona, people photography, family photographer, family photographer in Barcelona, family photography, kids photographer, kids photography, baby photography, newborn photography, events photographer, events photographer, business photographer, studio photography, artistic photography, lifestyle photography, videography, portraits, publications, `,
@@ -119,7 +119,7 @@ export const ui = {
 		'weddings.p6': `I am excited to meet you and help you preserve this part of your love story. I invite you to take a look at my portfolio and discover my style.`,
 		'weddings.albums': `I want to see your work`,
 		'weddings.packages': `Packages for your big day`,
-		'weddings.contact': `Book the date for my wedding`
+		'weddings.contact': `Book the date for my wedding`,
 	},
 	es: {
 		'meta.keywords': `manuel hamel, manuel hamel fotografía, fotógrafo, fotógrafo profesional, fotógrafo en Barcelona, Barcelona, fotógrafo de bodas, fotógrafo de bodas en Barcelona, fotógrafo profesional de bodas, fotografía de bodas, paquetes fotográficos de boda, fotografía de bodas de lujo, fotografía de bodas de alta gama, fotógrafo de personas, fotógrafo de personas en Barcelona, fotografía de personas, fotógrafo de familia, fotógrafo de familia en Barcelona, fotografía de familia, fotógrafo de niños, fotografía de niños, fotografía de bebés, fotografía de recién nacidos, fotógrafo de eventos, fotógrafo de eventos, fotógrafo de empresas, fotografía de estudio, fotografía artística, fotografía de estilo de vida, videografía, video de boda, película de boda, retratos, retratos de modelos, agencia de modelos, publicaciones,`,
@@ -159,7 +159,7 @@ export const ui = {
 		'weddings.p6': `Estoy emocionado de conocerte y ayudarte a resguardar esta parte de tu historia de amor. Te invito a ver mi portafolio y descubrir mi estilo.`,
 		'weddings.albums': `Quiero ver tu trabajo`,
 		'weddings.packages': `Paquetes para tu gran día`,
-		'weddings.contact': `Reserva la fecha de mi boda`
+		'weddings.contact': `Reserva la fecha de mi boda`,
 	},
 	fr: {
 		'meta.keywords': `manuel hamel, manuel hamel photographie, photographe, photographe professionnel, photographe à Barcelone, Barcelone, photographe de mariage, photographe de mariage à Barcelone, photographe de mariage professionnel, photographie de mariage, forfaits de photographie de mariage, photographie de mariage de luxe, photographie de mariage haut de gamme, photographe de personnes, photographe de personnes à Barcelone, photographie de personnes, photographe de famille, photographe de famille à Barcelone, photographie de famille, photographe d'enfants, photographie d'enfants, photographie de bébé, photographie de nouveau-né, photographe d'événements, photographe d'événements, photographe business, photographie de studio, photographie artistique, photographie lifestyle, vidéographie, portraits, publications, `,
@@ -198,6 +198,6 @@ export const ui = {
 		'weddings.p6': `Je suis impatient de vous rencontrer et de vous aider à préserver cette partie de votre histoire d'amour. Je vous invite à jeter un œil à mon portfolio et à découvrir mon style.`,
 		'weddings.albums': `Je veux voir votre travail`,
 		'weddings.packages': `Forfaits pour votre grand jour`,
-		'weddings.contact': `Réserver la date de mon mariage`
-	}
+		'weddings.contact': `Réserver la date de mon mariage`,
+	},
 } as const;

@@ -37,7 +37,7 @@ cite {
 	text-align: end;
 
 	&::before {
-		content: ' ~ ';
+		content: " ~ ";
 	}
 }
 

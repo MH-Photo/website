@@ -5,12 +5,12 @@
 #footer {
 	display: grid;
 	grid-template:
-		'social'
-		'navigation'
-		'logo'
-		'copyright'
-		'version'
-		'lang';
+		"social"
+		"navigation"
+		"logo"
+		"copyright"
+		"version"
+		"lang";
 	place-items: center center;
 	margin-block-start: var(--spacing-xl);
 	padding-block: var(--spacing-l);
@@ -49,9 +49,9 @@
 
 	@media (width >= 800px) {
 		grid-template:
-			'social logo logo logo navigation'
-			'lang logo logo logo .'
-			'lang copyright copyright copyright version';
+			"social logo logo logo navigation"
+			"lang logo logo logo ."
+			"lang copyright copyright copyright version";
 		place-items: end center;
 
 		& > .logo {

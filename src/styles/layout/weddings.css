@@ -8,7 +8,7 @@
 	cursor: pointer;
 }
 
-[lang]:not([lang='es']) {
+[lang]:not([lang="es"]) {
 	.lang-es {
 		/* Display only when language is spanish */
 		display: none;
@@ -17,7 +17,7 @@
 
 #weddings {
 	display: grid;
-	grid-template: 'picture picture picture' '. header .' '. main .' '. footer .' / minmax(var(--spacing-m), 1fr) auto minmax(
+	grid-template: "picture picture picture" ". header ." ". main ." ". footer ." / minmax(var(--spacing-m), 1fr) auto minmax(
 			var(--spacing-m),
 			1fr
 		);
@@ -61,7 +61,7 @@
 
 	@media (width >= 1100px) {
 		display: grid;
-		grid-template: 'header header' 'main picture' 'footer footer';
+		grid-template: "header header" "main picture" "footer footer";
 		padding-inline: var(--spacing-l);
 		gap: var(--spacing-xl);
 

@@ -5,38 +5,38 @@
  */
 
 /* Settings */
-@import url('settings/colors.css');
-@import url('settings/fonts.css');
-@import url('settings/settings.css');
+@import url("settings/colors.css");
+@import url("settings/fonts.css");
+@import url("settings/settings.css");
 
 /* Base */
-@import url('cssremedy/css/remedy.css');
-@import url('base/animations.css');
-@import url('base/base.css');
-@import url('base/vcard.css');
+@import url("cssremedy/css/remedy.css");
+@import url("base/animations.css");
+@import url("base/base.css");
+@import url("base/vcard.css");
 
 /* Layouts */
-@import url('layout/header.css');
-@import url('layout/navigation.css');
-@import url('layout/photos.css');
-@import url('layout/videos.css');
-@import url('layout/weddings.css');
-@import url('layout/about.css');
-@import url('layout/contact.css');
-@import url('layout/footer.css');
-@import url('layout/album.css');
-@import url('layout/language-selector.css');
+@import url("layout/header.css");
+@import url("layout/navigation.css");
+@import url("layout/photos.css");
+@import url("layout/videos.css");
+@import url("layout/weddings.css");
+@import url("layout/about.css");
+@import url("layout/contact.css");
+@import url("layout/footer.css");
+@import url("layout/album.css");
+@import url("layout/language-selector.css");
 
 /* Elements */
-@import url('elements/a.css');
-@import url('elements/button.css');
-@import url('elements/dialog.css');
-@import url('elements/h.css');
-@import url('elements/img.css');
-@import url('elements/p.css');
-@import url('elements/svg.css');
+@import url("elements/a.css");
+@import url("elements/button.css");
+@import url("elements/dialog.css");
+@import url("elements/h.css");
+@import url("elements/img.css");
+@import url("elements/p.css");
+@import url("elements/svg.css");
 
 /* Components */
 
 /* Utils */
-@import url('utils/utils.css');
+@import url("utils/utils.css");
