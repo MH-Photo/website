@@ -21,7 +21,7 @@
 		"compat-api/html": [
 			"error",
 			{
-				"ignore": ["img[loading]", "meta[name=theme-color]", "iframe[loading]", "iframe[allow]"]
+				"ignore": ["img[loading]", "img[fetchpriority]", "meta[name=theme-color]", "iframe[loading]", "iframe[allow]"]
 			}
 		]
 	}
