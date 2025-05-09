@@ -5,7 +5,12 @@
 	"license": "LICENSE",
 	"private": true,
 	"description": "MH Photography",
-	"keywords": ["website", "photography", "personal-website", "portfolio-website"],
+	"keywords": [
+		"website",
+		"photography",
+		"personal-website",
+		"portfolio-website"
+	],
 	"issues": "https://github.com/MH-Photo/website/issues",
 	"repository": {
 		"type": "git",
@@ -34,8 +39,6 @@
 		"concurrently": "^9.1.2",
 		"cssnano": "^7.0.6",
 		"cssremedy": "^0.1.0-beta.2",
-		"eslint": "^8.57.0",
-		"eslint-plugin-compat": "^4.2.0",
 		"hint": "^7.1.13",
 		"husky": "^9.1.7",
 		"image-size": "^1.2.0",
@@ -46,11 +49,6 @@
 		"prettier": "^3.3.3",
 		"semantic-release": "^24.2.3",
 		"sharp": "^0.34.1",
-		"stylelint": "^16.12.0",
-		"stylelint-config-property-sort-order-smacss": "^10.0.0",
-		"stylelint-config-standard": "^36.0.1",
-		"stylelint-order": "^6.0.4",
-		"stylelint-use-logical-spec": "^5.0.1",
 		"typescript": "^5.8.3",
 		"vite": "^6.3.4",
 		"wait-on": "^8.0.3"
