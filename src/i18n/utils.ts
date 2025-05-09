@@ -15,13 +15,13 @@ export function getLangPath(): (lang: string) => string {
 }
 
 export function useTranslations(lang: keyof typeof ui): (key: keyof (typeof ui)[typeof defaultLang]) => string {
-	return function t(key: keyof (typeof ui)[typeof defaultLang]) {
+	return function t(key: keyof (typeof ui)[typeof defaultLang]): string {
 		return ui[lang][key] || ui[defaultLang][key];
 	};
 }
 
 export function useTranslatedPath(lang: keyof typeof ui): (path: string, l?: string) => string {
-	return function translatePath(path: string, l: string = lang) {
+	return function translatePath(path: string, l: string = lang): string {
 		const pathName = path.replaceAll('/', '');
 		const hasTranslation = defaultLang !== l && routes[l] !== undefined && routes[l][pathName] !== undefined;
 		let translatedPath = `${hasTranslation ? `/${routes[l][pathName]}` : path}/`;
