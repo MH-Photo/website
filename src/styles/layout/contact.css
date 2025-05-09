@@ -4,7 +4,7 @@
 
 #contact {
 	display: grid;
-	grid-template: 'header' auto 'vcard' 1fr;
+	grid-template: "header" auto "vcard" 1fr;
 	min-block-size: 100vb;
 	gap: var(--spacing-l);
 	justify-items: center;

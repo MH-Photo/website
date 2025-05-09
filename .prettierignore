@@ -123,3 +123,18 @@ lighthouse*
 # Generated files
 package-lock.json
 CHANGELOG.md
+
+# images 
+*.jpg
+*.png
+*.webp
+*.avif
+
+# File extensions ceovered by biome
+*.js
+*.cjs
+*.mjs
+*.ts
+*.mts
+*.json
+*.css

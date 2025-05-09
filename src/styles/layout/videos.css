@@ -22,6 +22,6 @@
 	}
 	& .video {
 		block-size: auto;
-		aspect-ratio: 560/315;
+		aspect-ratio: 560 / 315;
 	}
 }

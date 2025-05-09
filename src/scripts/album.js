@@ -4,7 +4,7 @@
 
 let dialog;
 
-const setPicture = function (url) {
+const setPicture = (url) => {
 	const picture = dialog?.getElementsByTagName('picture')[0];
 
 	const avif = document.createElement('source');
@@ -28,7 +28,7 @@ const setPicture = function (url) {
 	picture.appendChild(img);
 };
 
-const resetPicture = function () {
+const resetPicture = () => {
 	const picture = dialog?.getElementsByTagName('picture')[0];
 
 	while (picture.lastChild) {
@@ -36,7 +36,7 @@ const resetPicture = function () {
 	}
 };
 
-const setNavigation = function (currentUrl) {
+const setNavigation = (currentUrl) => {
 	const previousBtn = document.getElementById('previous-photo');
 	const nextBtn = document.getElementById('next-photo');
 	const path = new URL(currentUrl).pathname;
@@ -47,19 +47,19 @@ const setNavigation = function (currentUrl) {
 	nextBtn.href = element?.nextElementSibling?.href || '';
 };
 
-const closeDialog = function () {
+const closeDialog = () => {
 	resetPicture();
 	dialog.close();
 };
 
-const gotToPhoto = function (event) {
+const gotToPhoto = (event) => {
 	resetPicture();
 	setPicture(event.currentTarget.href);
 	setNavigation(event.currentTarget.href);
 	event.preventDefault();
 };
 
-const openDialog = function (event) {
+const openDialog = (event) => {
 	setPicture(event.currentTarget.href);
 	setNavigation(event.currentTarget.href);
 
@@ -67,7 +67,7 @@ const openDialog = function (event) {
 	event.preventDefault();
 };
 
-const init = function () {
+const init = () => {
 	dialog = document.getElementById('photo-dialog');
 	const album = document.getElementsByTagName('main')[0];
 
@@ -120,6 +120,7 @@ const init = function () {
 	});
 
 	const photos = album.getElementsByTagName('a');
+	// biome-ignore lint/complexity/noForEach: TODO: refactor this
 	Array.from(photos).forEach((element) => {
 		if (!element.id) {
 			element.addEventListener('click', openDialog);

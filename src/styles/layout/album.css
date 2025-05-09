@@ -53,9 +53,7 @@
 		position: fixed;
 		align-items: center;
 		justify-content: center;
-		transition:
-			background 0.3s ease,
-			opacity 0.3s ease;
+		transition: background 0.3s ease, opacity 0.3s ease;
 		border: none;
 		background: none;
 
@@ -106,7 +104,7 @@
 	&:focus-visible {
 		outline: none;
 	}
-	&[href=''] {
+	&[href=""] {
 		display: none;
 	}
 }

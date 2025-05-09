@@ -5,10 +5,10 @@
 #header {
 	display: grid;
 	grid-template:
-		[image-start] '.' 1fr
-		'logo' auto [image-end]
-		'title' auto
-		'subtitle' auto;
+		[image-start] "." 1fr
+		"logo" auto [image-end]
+		"title" auto
+		"subtitle" auto;
 	place-items: end stretch;
 	block-size: 100vh; /* fallback */
 	block-size: 100svb;
