@@ -39,23 +39,6 @@ jobs:
     needs: [lint-pr, lint-code]
     uses: ./.github/workflows/test-code.yml
 
-  codeql:
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
-
-    name: '▶️ actions'
-    needs: [lint-pr, lint-code]
-    uses: ./.github/workflows/codeql.yml
-
-  sonarqube:
-    name: '▶️ actions'
-    needs: [lint-pr, lint-code]
-    uses: ./.github/workflows/sonarqube.yml
-    secrets:
-      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN  }}
-
   # visual-test:
   #   name: '▶️ actions'
   #   # execute after successful code validation to save unnecessary screenshots costs
