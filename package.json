@@ -44,7 +44,7 @@
 		"prettier": "^3.5.3",
 		"puppeteer": "^24.9.0",
 		"semantic-release": "^24.2.4",
-		"sharp": "^0.34.1",
+		"sharp": "^0.34.2",
 		"typescript": "^5.8.3",
 		"vite": "^6.3.5",
 		"wait-on": "^8.0.3"
