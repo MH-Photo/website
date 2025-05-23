@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
+import { getCollection, render } from 'astro:content';
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+	const pages = await getCollection('pages');
+
+	return pages.map((page) => ({
+		params: { slug: page.id === 'index' ? undefined : page.id },
+		props: { page }
+	}));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { page } = Astro.props;
+const { Content } = await render(page);
+---
+
+<!-- <Layout title={page.data.title}> -->
+<Layout>
+	<Header />
+	<Navigation />
+	
+</Layout>
+<main id="main"><Content /></main>
+	
+<footer id="footer"><Footer /> <Navigation /></footer>
