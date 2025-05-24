@@ -1,3 +1,5 @@
+import LazyYouTube from '../../components/LazyYouTube.astro';
+
 <section id="videos">
 	<h2>Love in Motion: Wedding Videography Unveiled</h2>
 	<p>
@@ -6,106 +8,14 @@
 		cinematic stories that capture the essence of your love, dedicated to preserving the emotions, laughter, and tears
 		that make your day truly unique, allowing you to relive the magic whenever you hit play.
 	</p>
-	{/* add param `?rel=0` to src to avoid related content at the end of the video (https://developers.google.com/youtube/player_parameters#rel) */}
-	<div class="videos">
-		<iframe
-			class="video"
-			loading="lazy"
-			width="560"
-			height="315"
-			src="https://www.youtube-nocookie.com/embed/7urut5SZMZY?rel=0&modestbranding=1"
-			title="Wedding Caroline & Daniel"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			allowfullscreen
-		></iframe>
-		<iframe
-			class="video"
-			loading="lazy"
-			width="560"
-			height="315"
-			src="https://www.youtube-nocookie.com/embed/KMOXqFcQMFA?rel=0&modestbranding=1"
-			title="Wedding Judith & Jordi"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			allowfullscreen
-		></iframe>
-		<iframe
-			class="video"
-			loading="lazy"
-			width="560"
-			height="315"
-			src="https://www.youtube-nocookie.com/embed/TZq3v_ndFbA?rel=0&modestbranding=1"
-			title="Wedding Oscar & Lydia"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			allowfullscreen
-		></iframe>
-		<iframe
-			class="video"
-			loading="lazy"
-			width="560"
-			height="315"
-			src="https://www.youtube-nocookie.com/embed/NbLncIdWTC8?rel=0&modestbranding=1"
-			title="Wedding Paola & Pedro"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			allowfullscreen
-		></iframe>
-		<iframe
-			class="video"
-			loading="lazy"
-			width="560"
-			height="315"
-			src="https://www.youtube-nocookie.com/embed/XSb0viGeEu0?rel=0&modestbranding=1"
-			title="Wedding Caroline & Yves"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			allowfullscreen
-		></iframe>
-		<iframe
-			class="video"
-			loading="lazy"
-			width="560"
-			height="315"
-			src="https://www.youtube-nocookie.com/embed/NUYqJ5sdNNE?rel=0&modestbranding=1"
-			title="La Boda de Madi & Greg - Un día mágico desde los preparativos hasta el baile"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			allowfullscreen
-		></iframe>
-		<iframe
-			class="video"
-			loading="lazy"
-			width="560"
-			height="315"
-			src="https://www.youtube-nocookie.com/embed/8J6_-tpnMps?rel=0&modestbranding=1"
-			title="Wedding Julie & Tobi in Belgium"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			allowfullscreen
-		></iframe>
-		<iframe
-			class="video"
-			loading="lazy"
-			width="560"
-			height="315"
-			src="https://www.youtube-nocookie.com/embed/8UVePQ-54BQ?rel=0&modestbranding=1"
-			title="Wedding Manisha & Craig - Party at Casa Miralles, Barcelona"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			allowfullscreen
-		></iframe>
-		<iframe
-			class="video"
-			loading="lazy"
-			width="560"
-			height="315"
-			src="https://www.youtube-nocookie.com/embed/QmmvKESfEsU?rel=0&modestbranding=1"
-			title="Wedding Manisha & Craig at Casa Miralles, Barcelona, Spain"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			allowfullscreen
-		></iframe>
-	</div>
+	{/* Only pass video ID or share link and title to the component */}
+	<LazyYouTube id="7urut5SZMZY" title="Wedding Caroline & Daniel" />
+	<LazyYouTube id="KMOXqFcQMFA" title="Wedding Judith & Jordi" />
+	<LazyYouTube id="TZq3v_ndFbA" title="Wedding Oscar & Lydia" />
+	<LazyYouTube id="NbLncIdWTC8" title="Wedding Paola & Pedro" />
+	<LazyYouTube id="XSb0viGeEu0" title="Wedding Caroline & Yves" />
+	<LazyYouTube id="NUYqJ5sdNNE" title="La Boda de Madi & Greg - Un día mágico desde los preparativos hasta el baile" />
+	<LazyYouTube id="8J6_-tpnMps" title="Wedding Julie & Tobi in Belgium" />
+	<LazyYouTube id="8UVePQ-54BQ" title="Wedding Manisha & Craig - Party at Casa Miralles, Barcelona" />
+	<LazyYouTube id="QmmvKESfEsU" title="Wedding Manisha & Craig at Casa Miralles, Barcelona, Spain" />
 </section>
