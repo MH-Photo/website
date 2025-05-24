@@ -21,7 +21,7 @@ const { Content } = await render(page);
 
 <!-- <Layout title={page.data.title}> -->
 <Layout>
-	<Header />
+	{(!page.id.includes('/')) && <Header />}
 	<Navigation />
 	
 </Layout>
