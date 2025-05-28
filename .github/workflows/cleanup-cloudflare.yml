@@ -1,0 +1,30 @@
+name: Cleanup Cloudflare Deployments
+
+on:
+  workflow_dispatch:
+    inputs: 
+      cleanup-types:
+        description: 'Type of cleanup to perform'
+        required: false
+        default: 'preview'
+        type: choice
+        options:
+          - preview
+          - production
+          - all
+
+permissions:
+  contents: read
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cleanup Cloudflare Deployments
+        uses: Th3S4mur41/cleanup-cloudflare-deployments@main
+        with:
+          cloudflare-api-token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          cloudflare-account-id: ${{ secrets.CLOUDFLARE_ID }}
+          cloudflare-project-name: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+          cleanup-types: ${{ github.event.inputs.cleanup-types }}
+          production-keep: 5
