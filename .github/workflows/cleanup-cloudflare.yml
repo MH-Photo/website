@@ -12,6 +12,11 @@ on:
           - preview
           - production
           - all
+      dry-run:
+        description: 'Run the workflow in dry-run mode'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: read
@@ -28,3 +33,4 @@ jobs:
           cloudflare-project-name: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
           cleanup-types: ${{ github.event.inputs.cleanup-types }}
           production-keep: 5
+          dry-run: ${{ github.event.inputs.dry-run }}
