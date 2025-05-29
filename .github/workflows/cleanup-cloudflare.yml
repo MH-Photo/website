@@ -31,6 +31,7 @@ jobs:
           cloudflare-api-token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           cloudflare-account-id: ${{ secrets.CLOUDFLARE_ID }}
           cloudflare-project-name: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           cleanup-types: ${{ github.event.inputs.cleanup-types }}
           production-keep: 5
           dry-run: ${{ github.event.inputs.dry-run }}
