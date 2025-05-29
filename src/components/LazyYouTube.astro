@@ -1,0 +1,66 @@
+---
+const { id, title } = Astro.props;
+
+// Extract video ID from full YouTube share link or just use the ID
+function getVideoId(input) {
+  if (!input) return '';
+  // If input is a full URL, extract the ID
+  const match = input.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=))([\w-]{11})/);
+  return match ? match[1] : input;
+}
+const videoId = getVideoId(id);
+---
+
+<div class="lazy-youtube" style="position:relative;width:560px;height:315px;margin-bottom:24px;overflow:hidden;">
+  <!-- TODO: replace with picture and also load sddefault (640*480) and hqdefault (480*360) for smaller screens -->
+	<!-- TODO: convert into native web component and move logic -->
+	<!-- TODO: Fix CSS and move into external stylesheet -->
+	<img
+    src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+    alt={`Thumbnail for ${title}`}
+    width="1280"
+    height="720"
+    loading="lazy"
+    style="display:block;width:100%;height:auto;cursor:pointer;"
+    onclick="this.style.display='none';this.nextElementSibling.style.display='flex';const iframe=this.parentNode.querySelector('iframe');iframe.style.display='block';iframe.contentWindow.postMessage('playVideo','*');"
+  />
+  <button
+    type="button"
+    class="play-btn"
+    aria-label={`Play video: ${title}`}
+    style="
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position:absolute;
+      top:0;left:0;width:100%;height:100%;
+      background:rgba(0,0,0,0.4);
+      border:none;
+      cursor:pointer;
+      z-index:2;
+    "
+    onclick="this.style.display='none';const img=this.parentNode.querySelector('img');if(img)img.style.display='none';const iframe=this.parentNode.querySelector('iframe');iframe.style.display='block';iframe.src=iframe.src+'&autoplay=1';"
+  >
+    <svg width="64" height="64" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="32" fill="rgba(0,0,0,0.6)" />
+      <polygon points="26,20 48,32 26,44" fill="#fff" />
+    </svg>
+  </button>
+  <iframe
+    width="560"
+    height="315"
+    src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0&modestbranding=1`}
+    title={title}
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+    loading="lazy"
+    style="display:none;position:absolute;top:0;left:0;width:100%;height:100%;"
+  ></iframe>
+</div>
+
+<style>
+.lazy-youtube { position: relative; width: 560px; height: 315px; margin-bottom: 24px; }
+.lazy-youtube img { display: block; width: 100%; height: 100%; cursor: pointer; }
+.lazy-youtube .play-btn { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+</style>
