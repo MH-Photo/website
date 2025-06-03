@@ -2,7 +2,7 @@ name: Cleanup Cloudflare Deployments
 
 on:
   workflow_dispatch:
-    inputs: 
+    inputs:
       cleanup-types:
         description: 'Type of cleanup to perform'
         required: false
