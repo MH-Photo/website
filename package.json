@@ -42,7 +42,7 @@
 		"postcss-nesting": "^13.0.0",
 		"postcss-preset-env": "^10.2.3",
 		"prettier": "^3.5.3",
-		"puppeteer": "^24.10.1",
+		"puppeteer": "^24.10.2",
 		"semantic-release": "^24.2.5",
 		"sharp": "^0.34.2",
 		"typescript": "^5.8.3",
