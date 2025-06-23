@@ -120,7 +120,6 @@ const init = () => {
 	});
 
 	const photos = album.getElementsByTagName('a');
-	// biome-ignore lint/complexity/noForEach: TODO: refactor this
 	Array.from(photos).forEach((element) => {
 		if (!element.id) {
 			element.addEventListener('click', openDialog);
