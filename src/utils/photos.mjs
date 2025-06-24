@@ -74,7 +74,6 @@ export const photos = (input) => {
 	const albums = getAlbums(i);
 
 	// Get a list of file in each album
-	// biome-ignore lint/complexity/noForEach: TODO: refactor this
 	albums.forEach((album) => {
 		photos[album] = {};
 		photos[album].path = `${i}/${album}`;
@@ -82,7 +81,6 @@ export const photos = (input) => {
 
 		const images = getImages(photos[album].path);
 
-		// biome-ignore lint/complexity/noForEach: TODO: refactor this
 		images.forEach((image) => {
 			photos[album].images.push(getImageData(photos[album].path, image));
 		});

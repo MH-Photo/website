@@ -5,7 +5,12 @@
 	"license": "LICENSE",
 	"private": true,
 	"description": "MH Photography",
-	"keywords": ["website", "photography", "personal-website", "portfolio-website"],
+	"keywords": [
+		"website",
+		"photography",
+		"personal-website",
+		"portfolio-website"
+	],
 	"issues": "https://github.com/MH-Photo/website/issues",
 	"repository": {
 		"type": "git",
@@ -19,7 +24,7 @@
 	"devDependencies": {
 		"@babel/core": "^7.27.4",
 		"@babel/preset-env": "^7.27.2",
-		"@biomejs/biome": "^1.9.4",
+		"@biomejs/biome": "^2.0.4",
 		"@commitlint/cli": "^19.8.1",
 		"@commitlint/config-conventional": "^19.8.1",
 		"@csstools/postcss-oklab-function": "^4.0.9",

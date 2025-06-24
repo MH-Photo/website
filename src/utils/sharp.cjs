@@ -45,9 +45,7 @@ function* getFiles(dir) {
 			fs.mkdirSync(dir, { recursive: true });
 		}
 
-		// biome-ignore lint/complexity/noForEach: TODO: refactor this
 		sizes.forEach((size) => {
-			// biome-ignore lint/complexity/noForEach: TODO: refactor this
 			formats.forEach((format) => {
 				const out = `${output}-${size}.${format}`;
 				sharp(input)
