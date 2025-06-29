@@ -48,7 +48,7 @@
 		"postcss-preset-env": "^10.2.4",
 		"prettier": "^3.6.2",
 		"puppeteer": "^24.11.1",
-		"semantic-release": "^24.2.5",
+		"semantic-release": "^24.2.6",
 		"sharp": "^0.34.2",
 		"typescript": "^5.8.3",
 		"vite": "^7.0.0",
