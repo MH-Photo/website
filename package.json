@@ -52,7 +52,7 @@
 		"sharp": "^0.34.3",
 		"typescript": "^5.8.3",
 		"vite": "^7.0.5",
-		"wait-on": "^8.0.3"
+		"wait-on": "^8.0.4"
 	},
 	"optionalDependencies": {
 		"lint-staged": "^16.1.2"
