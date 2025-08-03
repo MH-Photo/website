@@ -55,7 +55,7 @@
 		"wait-on": "^8.0.4"
 	},
 	"optionalDependencies": {
-		"lint-staged": "^16.1.2"
+		"lint-staged": "^16.1.4"
 	},
 	"scripts": {
 		"start": "astro dev",
