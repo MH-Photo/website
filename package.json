@@ -24,7 +24,7 @@
 	"devDependencies": {
 		"@babel/core": "^7.28.3",
 		"@babel/preset-env": "^7.28.3",
-		"@biomejs/biome": "^2.2.0",
+		"@biomejs/biome": "^2.2.2",
 		"@commitlint/cli": "^19.8.1",
 		"@commitlint/config-conventional": "^19.8.1",
 		"@csstools/postcss-oklab-function": "^4.0.11",
@@ -36,7 +36,7 @@
 		"autoprefixer": "^10.4.21",
 		"babel-loader": "^10.0.0",
 		"browserslist": "^4.25.3",
-		"concurrently": "^9.2.0",
+		"concurrently": "^9.2.1",
 		"cssnano": "^7.1.1",
 		"cssremedy": "^0.1.0-beta.2",
 		"hint": "^7.1.13",
