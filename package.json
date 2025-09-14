@@ -77,7 +77,7 @@
 		"@astrojs/sitemap": "^3.5.1",
 		"@fontsource-variable/noto-serif-display": "^5.2.8",
 		"@fontsource/caveat": "^5.2.7",
-		"@fontsource/gfs-didot": "^5.2.6",
+		"@fontsource/gfs-didot": "^5.2.7",
 		"@fontsource/titillium-web": "^5.2.7",
 		"astro": "^5.13.7"
 	}
