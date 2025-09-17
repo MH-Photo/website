@@ -76,7 +76,7 @@
 	"dependencies": {
 		"@astrojs/sitemap": "^3.6.0",
 		"@fontsource-variable/noto-serif-display": "^5.2.9",
-		"@fontsource/caveat": "^5.2.7",
+		"@fontsource/caveat": "^5.2.8",
 		"@fontsource/gfs-didot": "^5.2.7",
 		"@fontsource/titillium-web": "^5.2.7",
 		"astro": "^5.13.8"
