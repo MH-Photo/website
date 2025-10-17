@@ -1,3 +1,10 @@
+# [2.9.0](https://github.com/MH-Photo/website/compare/v2.8.0...v2.9.0) (2025-10-17)
+
+
+### Features
+
+* **header:** add work-in-progress section and style adjustments ([#1474](https://github.com/MH-Photo/website/issues/1474)) ([c0efacc](https://github.com/MH-Photo/website/commit/c0efacc40a2bb47f7b4fefd16b816de70488c872))
+
 # [2.8.0](https://github.com/MH-Photo/website/compare/v2.7.5...v2.8.0) (2025-05-05)
 
 
