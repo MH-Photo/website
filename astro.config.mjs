@@ -1,5 +1,6 @@
 import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
+import { ViteMinifyPlugin } from 'vite-plugin-minify';
 
 // https://astro.build/config
 export default defineConfig({
@@ -20,4 +21,15 @@ export default defineConfig({
 			},
 		}),
 	],
+	vite: {
+		plugins: [
+			// input https://www.npmjs.com/package/html-minifier-terser options
+			ViteMinifyPlugin({
+				removeComments: true,
+			}),
+		],
+	},
+	devToolbar: {
+		enabled: false,
+	},
 });

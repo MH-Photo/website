@@ -1,0 +1,14 @@
+# Redirect album pages to language landing pages (temporary WIP)
+# Syntax: <source> <destination> <status>
+
+# English (default language hidden at root)
+/albums/* / 302
+
+# German
+/de/alben/* /de 302
+
+# Spanish
+/es/albumes/* /es 302
+
+# French
+/fr/albums/* /fr 302
