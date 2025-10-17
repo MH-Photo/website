@@ -91,6 +91,25 @@
 			object-position: center 40%;
 		}
 	}
+
+	& .work-in-progress {
+		grid-row: 1;
+		grid-column: 1;
+		justify-self: center;
+		align-self: center;
+
+		& > p {
+			font-family: var(--font-family-header);
+			text-align: center;
+			text-wrap: balance;
+
+			font-size: clamp(var(--font-size-header-m), 5vw, var(--font-size-header-l));
+
+			&:first-of-type {
+				font-weight: var(--font-weight-medium);
+			}
+		}
+	}
 }
 
 #pause-hero-carousel:checked {
